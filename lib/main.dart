@@ -17,12 +17,15 @@ class MainApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
+              const SizedBox(
+                height: 40,
+              ),
               const Text("Log In",style: TextStyle(color: Colors.black, fontSize:45 ),),
               const SizedBox(
-                height: 100,
+                height: 80,
               ),
               Padding(
-                padding: EdgeInsets.all(50.0),
+                padding: EdgeInsets.all(40.0),
                 child: TextField(
                   decoration: InputDecoration(
                     fillColor: Colors.blue[100],
@@ -46,7 +49,7 @@ class MainApp extends StatelessWidget {
                 height: 10,
               ),
               Padding(
-                padding: EdgeInsets.all(50.0),
+                padding: EdgeInsets.all(40.0),
                 child: TextField(
                   obscureText: true,
                   decoration: InputDecoration(
@@ -73,10 +76,10 @@ class MainApp extends StatelessWidget {
                 padding: const EdgeInsets.all(50.0),
                 child: SizedBox(
                   width:double.infinity,
-                  height: 50,
+                  height: 55,
                   child: ElevatedButton(
                     onPressed: (){},
-                    child: Text("Login"),
+                    child: Text("Log In",style: TextStyle(fontSize: 30, color: Colors.black),),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue,
                       
