@@ -48,6 +48,7 @@ class MainApp extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(50.0),
                 child: TextField(
+                  obscureText: true,
                   decoration: InputDecoration(
                     hintText: "Password",
                     enabledBorder: OutlineInputBorder(
